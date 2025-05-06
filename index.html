@@ -1,29 +1,361 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Поехали!</title>
-    <meta name="description" content="Poehali.dev — запусти свой сайт за минуту!" />
-    <meta name="author" content="poehali.dev" />
-     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <meta property="og:title" content="Поехали!">
-    <meta property="og:description" content="Ваш личный программист, который делает сайты в 30 раз быстрее обычного.">
-    <meta property="og:image:width" content="4800">
-    <meta property="og:image:height" content="2520">
-    <meta property="og:image:alt" content="Поехали! — сервис разработки сайтов с помощью ИИ">
-    <meta property="og:image" content="https://cdn.poehali.dev/intertnal/img/og.png">
-    <meta name="twitter:image" content="https://cdn.poehali.dev/intertnal/img/og.png">
-
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS COMMENT! -->
-    <script src="https://cdn.poehali.dev/intertnal/js/pp-min-2.js"></script>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS COMMENT! -->
-
-      <meta name="pp-name" value="casting-saint-petersburg-1">
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кастинги СПб | ТФП съёмки СПб | Ищу модель СПб</title>
+    <meta name="description" content="Ищу модель ТФП СПб, ищу модель в СПб, кастинги СПб, фотограф ТФП, фотосессии ТФП, видеограф ТФП">
+    <meta name="keywords" content="модель, ищу модель ТФП, СПб, кастинги СПб, ТФП модель, ищу модель для в СПб">
+    <link rel="icon" href="favicon.svg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        body {
+            background-color: #f8f8f8;
+            color: #111;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            border-bottom: 1px solid #000;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+        }
+        
+        .title {
+            font-size: 36px;
+            text-align: center;
+            margin: 30px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #000;
+        }
+        
+        .date {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+        
+        article {
+            margin-bottom: 30px;
+        }
+        
+        .section-heading {
+            font-size: 24px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .sidebar {
+            border: 1px solid #000;
+            padding: 20px;
+        }
+        
+        .sidebar-title {
+            font-size: 22px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        
+        blockquote {
+            font-style: italic;
+            border-left: 2px solid #000;
+            padding-left: 20px;
+            margin: 20px 0;
+        }
+        
+        .requirements {
+            border: 2px solid #000;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .contact-box {
+            text-align: center;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            padding: 20px 0;
+            margin: 30px 0;
+        }
+        
+        footer {
+            border-top: 1px solid #000;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        @media (max-width: 600px) {
+            .footer-content {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
+    </style>
+    <meta name="pp-name" value="casting-saint-petersburg-1">
+      <script src="https://cdn.poehali.dev/intertnal/js/pp-min-2.js"></script>
   </head>
-
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                        <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                    </svg>
+                    <span>КАСТИНГИ СПБ</span>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О кастинге</a></li>
+                        <li><a href="tips.html">Советы</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="contact-info">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 2L11 13"></path>
+                        <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
+                    </svg>
+                    <a href="https://t.me/vocoders" target="_blank" rel="noopener noreferrer">t.me/vocoders</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="date">
+            <script>
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                document.write(new Date().toLocaleDateString('ru-RU', options));
+            </script>
+        </div>
+        
+        <h1 class="title">КАСТИНГ МОДЕЛЕЙ В САНКТ-ПЕТЕРБУРГЕ</h1>
+        
+        <div class="main-content">
+            <div class="primary-content">
+                <article>
+                    <h2 class="section-heading">ОБЪЯВЛЕНИЕ О КАСТИНГЕ</h2>
+                    
+                    <p>
+                        <strong>ВНИМАНИЕ!</strong> Проводится набор моделей для участия в творческих проектах на условиях ТФП (Time for Print) в Санкт-Петербурге. Мы ищем талантливых моделей для съёмок музыкальных роликов и короткометражных фильмов.
+                    </p>
+                    
+                    <div class="requirements">
+                        <h3>ТРЕБОВАНИЯ К КАНДИДАТАМ:</h3>
+                        <ul>
+                            <li>Возраст от 18 лет</li>
+                            <li>Славянский тип внешности</li>
+                            <li>Стройное телосложение</li>
+                            <li>Длинные волосы</li>
+                            <li>Светлые глаза</li>
+                            <li>Обаяние и харизма</li>
+                        </ul>
+                    </div>
+                    
+                    <p>
+                        Мы предлагаем уникальную возможность стать частью креативных проектов, пополнить портфолио качественными работами и получить ценный опыт в сфере музыкальной и кинематографической индустрии.
+                    </p>
+                    
+                    <p>
+                        Съёмки проводятся в различных локациях Санкт-Петербурга. График работы обсуждается индивидуально. Все проекты реализуются на условиях взаимовыгодного сотрудничества.
+                    </p>
+                    
+                    <blockquote>
+                        "Наши проекты — это возможность для творческой самореализации и создания запоминающихся образов в уникальном визуальном стиле."
+                    </blockquote>
+                    
+                    <div class="contact-box">
+                        <p>Для связи: <a href="https://t.me/vocoders" target="_blank" rel="noopener noreferrer">t.me/vocoders</a></p>
+                    </div>
+                </article>
+                
+                <article>
+                    <h2 class="section-heading">ПРЕИМУЩЕСТВА УЧАСТИЯ</h2>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <h3>ПРОФЕССИОНАЛЬНОЕ ПОРТФОЛИО</h3>
+                            <p>
+                                Участие в наших проектах позволит вам пополнить своё портфолио высококачественными работами в различных жанрах и стилях. Все материалы передаются моделям для личного и профессионального использования.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h3>ОПЫТ РАБОТЫ</h3>
+                            <p>
+                                Вы получите ценный опыт работы в творческих проектах, который поможет развить ваши навыки позирования, работы перед камерой и взаимодействия с командой профессионалов.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="sidebar">
+                <h3 class="sidebar-title">ВАЖНАЯ ИНФОРМАЦИЯ</h3>
+                
+                <div>
+                    <h4>ДАТА КАСТИНГА:</h4>
+                    <p>Постоянный набор</p>
+                </div>
+                <br>
+                <div>
+                    <h4>МЕСТО ПРОВЕДЕНИЯ:</h4>
+                    <p>Санкт-Петербург</p>
+                </div>
+                <br>
+                <div>
+                    <h4>ТИП ПРОЕКТОВ:</h4>
+                    <p>Музыкальные ролики, короткометражные фильмы</p>
+                </div>
+                <br>
+                <div>
+                    <h4>УСЛОВИЯ:</h4>
+                    <p>ТФП (Time for Print)</p>
+                </div>
+                
+                <hr style="margin: 20px 0;">
+                
+                <div style="text-align: center; border: 1px solid #000; padding: 15px;">
+                    <h4>КАК ПРИНЯТЬ УЧАСТИЕ:</h4>
+                    <p>
+                        Отправьте заявку с вашими фото и кратким описанием опыта работы (при наличии)
+                    </p>
+                    <p style="margin-top: 10px;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: middle;">
+                            <path d="M22 2L11 13"></path>
+                            <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
+                        </svg>
+                        <a href="https://t.me/vocoders" target="_blank" rel="noopener noreferrer">t.me/vocoders</a>
+                    </p>
+                </div>
+                
+                <div style="margin-top: 30px;">
+                    <h3 class="sidebar-title">ПОСЛЕДНИЕ ПРОЕКТЫ</h3>
+                    
+                    <ul>
+                        <li>Музыкальный видеоклип "Городские мотивы"</li>
+                        <li>Короткометражный фильм "Отражения"</li>
+                        <li>Музыкальный ролик "Тихие улицы"</li>
+                        <li>Художественная короткометражка "Невский этюд"</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p class="date">© <script>document.write(new Date().getFullYear())</script> КАСТИНГИ СПБ</p>
+                    <p>Поиск моделей для творческих проектов в Санкт-Петербурге</p>
+                </div>
+                
+                <div class="contact-info">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 2L11 13"></path>
+                        <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
+                    </svg>
+                    <a href="https://t.me/vocoders" target="_blank" rel="noopener noreferrer">Telegram: t.me/vocoders</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
