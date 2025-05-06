@@ -1,421 +1,520 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Советы для моделей | Кастинги СПб</title>
-    <meta name="description" content="Полезные советы для моделей по подготовке к кастингам и съёмкам в Санкт-Петербурге. Как успешно пройти кастинг.">
-    <meta name="keywords" content="советы моделям, подготовка к кастингу, как пройти кастинг, ТФП съёмки, советы для начинающих моделей">
-    <link rel="icon" href="favicon.svg">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        
-        body {
-            background-color: #f8f8f8;
-            color: #111;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        header {
-            border-bottom: 1px solid #000;
-            padding: 20px 0;
-            margin-bottom: 20px;
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: bold;
-            font-size: 24px;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 30px;
-        }
-        
-        nav a {
-            text-decoration: none;
-            color: #000;
-            font-size: 18px;
-        }
-        
-        nav a:hover {
-            text-decoration: underline;
-        }
-        
-        .contact-info {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: bold;
-        }
-        
-        .title {
-            font-size: 36px;
-            text-align: center;
-            margin: 30px 0;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #000;
-        }
-        
-        .main-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 30px;
-        }
-        
-        @media (max-width: 768px) {
-            .main-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .header-content {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            nav ul {
-                flex-direction: column;
-                gap: 10px;
-                align-items: center;
-            }
-        }
-        
-        article {
-            margin-bottom: 30px;
-        }
-        
-        .section-heading {
-            font-size: 24px;
-            border-bottom: 1px solid #000;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-        }
-        
-        .sidebar {
-            border: 1px solid #000;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .sidebar-title {
-            font-size: 22px;
-            border-bottom: 1px solid #000;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-        }
-        
-        blockquote {
-            font-style: italic;
-            border-left: 2px solid #000;
-            padding-left: 20px;
-            margin: 20px 0;
-        }
-        
-        .requirements {
-            border: 2px solid #000;
-            padding: 20px;
-            margin: 20px 0;
-        }
-        
-        ul {
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .contact-box {
-            text-align: center;
-            border-top: 1px solid #000;
-            border-bottom: 1px solid #000;
-            padding: 20px 0;
-            margin: 30px 0;
-        }
-        
-        footer {
-            border-top: 1px solid #000;
-            padding: 20px 0;
-            margin-top: 50px;
-        }
-        
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        
-        @media (max-width: 600px) {
-            .footer-content {
-                flex-direction: column;
-                gap: 15px;
-                text-align: center;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Советы для моделей | Кастинги СПб</title>
+  <meta name="description" content="Полезные советы для моделей по подготовке к кастингам и съёмкам в Санкт-Петербурге. Как успешно пройти кастинг.">
+  <meta name="keywords" content="советы моделям, подготовка к кастингу, как пройти кастинг, ТФП съёмки, советы для начинающих моделей">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    /* Основные стили */
+    body {
+      font-family: 'Times New Roman', Georgia, serif;
+      line-height: 1.6;
+      color: #111;
+      background-color: #fafafa;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Заголовки */
+    .newspaper-title {
+      font-family: 'Times New Roman', Georgia, serif;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: -0.5px;
+      border-bottom: 2px solid #000;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .newspaper-heading {
+      font-family: 'Times New Roman', Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: -0.5px;
+      border-bottom: 1px solid #000;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+    
+    .newspaper-subtitle {
+      font-family: 'Times New Roman', Georgia, serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      margin-bottom: 15px;
+    }
+    
+    .newspaper-date {
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #666;
+      text-align: center;
+      margin: 10px 0;
+    }
+    
+    /* Текст */
+    .newspaper-text {
+      font-family: 'Times New Roman', Georgia, serif;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    
+    .newspaper-quote {
+      font-style: italic;
+      padding-left: 20px;
+      border-left: 2px solid #000;
+      margin: 20px 0;
+    }
+    
+    .newspaper-contact {
+      font-family: Arial, sans-serif;
+      font-weight: 600;
+    }
+    
+    /* Макет */
+    header {
+      border-bottom: 1px solid #000;
+      padding: 20px 0;
+    }
+    
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    @media (min-width: 768px) {
+      .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    @media (min-width: 768px) {
+      nav {
+        flex-direction: row;
+        gap: 20px;
+      }
+    }
+    
+    nav a {
+      color: #111;
+      text-decoration: none;
+    }
+    
+    nav a:hover {
+      text-decoration: underline;
+    }
+    
+    .contact-button {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .contact-button a {
+      color: #111;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    
+    main {
+      min-height: 80vh;
+      padding: 30px 0;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    
+    @media (min-width: 768px) {
+      .grid {
+        grid-template-columns: 2fr 1fr;
+      }
+    }
+    
+    .separator {
+      height: 1px;
+      background-color: #000;
+      margin: 30px 0;
+    }
+    
+    .box {
+      border: 1px solid #000;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .box-border {
+      border: 2px solid #000;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    
+    footer {
+      border-top: 1px solid #000;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+    
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      text-align: center;
+    }
+    
+    @media (min-width: 768px) {
+      .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+    
+    /* Иконки */
+    .icon {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      stroke-width: 0;
+      stroke: currentColor;
+      fill: currentColor;
+    }
+    
+    .icon-small {
+      width: 18px;
+      height: 18px;
+    }
+    
+    .icon-large {
+      width: 32px;
+      height: 32px;
+    }
+    
+    /* Списки */
+    ul.feature-list {
+      list-style-type: disc;
+      padding-left: 25px;
+      margin: 15px 0;
+    }
+    
+    ul.feature-list li {
+      margin-bottom: 10px;
+    }
+    
+    /* Утилиты */
+    .text-center {
+      text-align: center;
+    }
+    
+    .font-bold {
+      font-weight: bold;
+    }
+    
+    .mb-4 {
+      margin-bottom: 15px;
+    }
+    
+    .mt-4 {
+      margin-top: 15px;
+    }
+    
+    .newspaper-column {
+      font-family: 'Times New Roman', Georgia, serif;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    
+    .highlight {
+      background-color: #f8f8f8;
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 15px 0;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polygon points="23 7 16 12 23 17 23 7"></polygon>
-                        <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
-                    </svg>
-                    <span>КАСТИНГИ СПБ</span>
-                </div>
-                
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a href="about.html">О кастинге</a></li>
-                        <li><a href="tips.html">Советы</a></li>
-                        <li><a href="contact.html">Контакты</a></li>
-                    </ul>
-                </nav>
-                
-                <div class="contact-info">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M22 2L11 13"></path>
-                        <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
-                    </svg>
-                    <a href="https://t.me/vocoders" target="_blank" rel="noopener noreferrer">t.me/vocoders</a>
-                </div>
-            </div>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <svg class="icon icon-large" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm14 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM8 9a1 1 0 0 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+          </svg>
+          <h1 class="newspaper-subtitle" style="margin: 0;">КАСТИНГИ СПБ</h1>
         </div>
-    </header>
-    
-    <main class="container">
-        <h1 class="title">СОВЕТЫ ДЛЯ МОДЕЛЕЙ</h1>
         
-        <div class="main-content">
-            <div class="primary-content">
-                <article>
-                    <h2 class="section-heading">КАК УСПЕШНО ПРОЙТИ КАСТИНГ</h2>
-                    
-                    <p>
-                        Успешное прохождение кастинга требует не только внешних данных, но и правильного подхода к подготовке и презентации себя. Мы собрали полезные рекомендации, которые помогут вам увеличить шансы на успех.
-                    </p>
-                    
-                    <h3 style="font-size: 22px; margin: 20px 0 10px;">ПОДГОТОВКА К КАСТИНГУ</h3>
-                    
-                    <p>
-                        <strong>1. Подготовьте качественное портфолио.</strong> Даже если у вас нет опыта работы моделью, можно сделать несколько хороших фотографий, которые продемонстрируют вашу внешность и потенциал. Включите фото в полный рост, портрет и несколько снимков с разных ракурсов.
-                    </p>
-                    <br>
-                    <p>
-                        <strong>2. Изучите информацию о проекте.</strong> Постарайтесь узнать как можно больше о том, для чего проводится кастинг, какой образ ищут организаторы. Это поможет вам правильно себя преподнести.
-                    </p>
-                    <br>
-                    <p>
-                        <strong>3. Подготовьте краткое резюме.</strong> Укажите ваш возраст, рост, вес, параметры (если это релевантно), опыт работы (если есть) и контактную информацию.
-                    </p>
-                    
-                    <blockquote>
-                        "Первое впечатление складывается не только из внешности, но и из вашего отношения к делу, пунктуальности и способности следовать инструкциям при подаче заявки."
-                    </blockquote>
-                    
-                    <h3 style="font-size: 22px; margin: 20px 0 10px;">ВО ВРЕМЯ КАСТИНГА</h3>
-                    
-                    <p>
-                        <strong>1. Будьте пунктуальны.</strong> Опоздание может негативно повлиять на решение, даже если ваша внешность идеально подходит для проекта.
-                    </p>
-                    <br>
-                    <p>
-                        <strong>2. Оденьтесь соответствующе.</strong> Если нет специальных требований, выбирайте простую одежду, которая хорошо сидит и не отвлекает внимание от вас. Минимум макияжа, чтобы организаторы могли оценить вашу естественную внешность.
-                    </p>
-                    <br>
-                    <p>
-                        <strong>3. Будьте естественны.</strong> Избегайте наигранности и неестественных поз. Двигайтесь плавно и уверенно, показывая свою индивидуальность.
-                    </p>
-                    <br>
-                    <p>
-                        <strong>4. Следуйте инструкциям.</strong> Внимательно слушайте, что вам говорят, и выполняйте указания режиссера или фотографа.
-                    </p>
-                    
-                    <h3 style="font-size: 22px; margin: 20px 0 10px;">ПОДГОТОВКА К СЪЁМКАМ</h3>
-                    
-                    <p>
-                        <strong>1. Высыпайтесь.</strong> Недостаток сна сразу отражается на внешности. Постарайтесь хорошо отдохнуть перед съёмкой.
-                    </p>
-                    <br>
-                    <p>
-                        <strong>2. Следите за питанием.</strong> За несколько дней до съёмки рекомендуется исключить продукты, которые могут вызвать отеки или проблемы с кожей (соленое, острое, алкоголь).
-                    </p>
-                    <br>
-                    <p>
-                        <strong>3. Подготовьте кожу и волосы.</strong> Используйте увлажняющие средства для лица и тела, маски для волос — это поможет выглядеть свежее и ухоженнее.
-                    </p>
-                    
-                    <div class="requirements">
-                        <h3 style="font-size: 22px; margin-bottom: 15px;">ТИПИЧНЫЕ ОШИБКИ НАЧИНАЮЩИХ МОДЕЛЕЙ:</h3>
-                        
-                        <ul>
-                            <li>Чрезмерный макияж на кастинге</li>
-                            <li>Неестественные позы и выражения лица</li>
-                            <li>Игнорирование указаний фотографа/режиссера</li>
-                            <li>Отсутствие пунктуальности</li>
-                            <li>Недостаток подготовки (не изучили информацию о проекте)</li>
-                            <li>Переоценка своих возможностей или неуверенность в себе</li>
-                            <li>Отсутствие базовых знаний о работе модели</li>
-                        </ul>
-                    </div>
-                    
-                    <h3 style="font-size: 22px; margin: 20px 0 10px;">ВО ВРЕМЯ СЪЁМОК</h3>
-                    
-                    <p>
-                        <strong>1. Будьте готовы к повторениям.</strong> Иногда для получения идеального кадра требуется много дублей и повторений одних и тех же действий.
-                    </p>
-                    <br>
-                    <p>
-                        <strong>2. Поддерживайте энергию.</strong> Съёмки могут быть длительными, поэтому важно сохранять энтузиазм и энергию на протяжении всего процесса.
-                    </p>
-                    <br>
-                    <p>
-                        <strong>3. Будьте открыты для экспериментов.</strong> Не бойтесь пробовать разные образы и эмоции, даже если они кажутся вам необычными.
-                    </p>
-                    <br>
-                    <p>
-                        <strong>4. Задавайте вопросы.</strong> Если вам что-то непонятно, лучше уточнить, чем делать по-своему и потом переснимать.
-                    </p>
-                </article>
+        <nav>
+          <a href="index.html" class="newspaper-text">Главная</a>
+          <a href="about.html" class="newspaper-text">О кастинге</a>
+          <a href="tips.html" class="newspaper-text">Советы</a>
+          <a href="contact.html" class="newspaper-text">Контакты</a>
+        </nav>
+        
+        <div class="contact-button newspaper-contact">
+          <svg class="icon icon-small" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+          <a href="https://t.me/vocoders" target="_blank" rel="noopener noreferrer">
+            t.me/vocoders
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="container">
+      <h1 class="newspaper-title">СОВЕТЫ ДЛЯ МОДЕЛЕЙ</h1>
+      
+      <div class="grid">
+        <div>
+          <article class="newspaper-column">
+            <h2 class="newspaper-heading">КАК УСПЕШНО ПРОЙТИ КАСТИНГ</h2>
+            
+            <p class="mb-4">
+              Успешное прохождение кастинга требует не только внешних данных, но и правильного подхода к подготовке и презентации себя. Мы собрали полезные рекомендации, которые помогут вам увеличить шансы на успех.
+            </p>
+            
+            <h3 class="newspaper-subtitle mt-4">ПОДГОТОВКА К КАСТИНГУ</h3>
+            
+            <p class="mb-4">
+              <strong>1. Подготовьте качественное портфолио.</strong> Даже если у вас нет опыта работы моделью, можно сделать несколько хороших фотографий, которые продемонстрируют вашу внешность и потенциал. Включите фото в полный рост, портрет и несколько снимков с разных ракурсов.
+            </p>
+            
+            <p class="mb-4">
+              <strong>2. Изучите информацию о проекте.</strong> Постарайтесь узнать как можно больше о том, для чего проводится кастинг, какой образ ищут организаторы. Это поможет вам правильно себя преподнести.
+            </p>
+            
+            <p class="mb-4">
+              <strong>3. Подготовьте краткое резюме.</strong> Укажите ваш возраст, рост, вес, параметры (если это релевантно), опыт работы (если есть) и контактную информацию.
+            </p>
+            
+            <blockquote class="newspaper-quote">
+              "Первое впечатление складывается не только из внешности, но и из вашего отношения к делу, пунктуальности и способности следовать инструкциям при подаче заявки."
+            </blockquote>
+            
+            <h3 class="newspaper-subtitle mt-4">ВО ВРЕМЯ КАСТИНГА</h3>
+            
+            <p class="mb-4">
+              <strong>1. Будьте пунктуальны.</strong> Опоздание может негативно повлиять на решение, даже если ваша внешность идеально подходит для проекта.
+            </p>
+            
+            <p class="mb-4">
+              <strong>2. Оденьтесь соответствующе.</strong> Если нет специальных требований, выбирайте простую одежду, которая хорошо сидит и не отвлекает внимание от вас. Минимум макияжа, чтобы организаторы могли оценить вашу естественную внешность.
+            </p>
+            
+            <p class="mb-4">
+              <strong>3. Будьте естественны.</strong> Избегайте наигранности и неестественных поз. Двигайтесь плавно и уверенно, показывая свою индивидуальность.
+            </p>
+            
+            <p class="mb-4">
+              <strong>4. Следуйте инструкциям.</strong> Внимательно слушайте, что вам говорят, и выполняйте указания режиссера или фотографа.
+            </p>
+            
+            <h3 class="newspaper-subtitle mt-4">ПОДГОТОВКА К СЪЁМКАМ</h3>
+            
+            <p class="mb-4">
+              <strong>1. Высыпайтесь.</strong> Недостаток сна сразу отражается на внешности. Постарайтесь хорошо отдохнуть перед съёмкой.
+            </p>
+            
+            <p class="mb-4">
+              <strong>2. Следите за питанием.</strong> За несколько дней до съёмки рекомендуется исключить продукты, которые могут вызвать отеки или проблемы с кожей (соленое, острое, алкоголь).
+            </p>
+            
+            <p class="mb-4">
+              <strong>3. Подготовьте кожу и волосы.</strong> Используйте увлажняющие средства для лица и тела, маски для волос — это поможет выглядеть свежее и ухоженнее.
+            </p>
+            
+            <div class="box-border">
+              <h3 class="newspaper-subtitle mb-4">ТИПИЧНЫЕ ОШИБКИ НАЧИНАЮЩИХ МОДЕЛЕЙ:</h3>
+              
+              <ul class="feature-list">
+                <li>Чрезмерный макияж на кастинге</li>
+                <li>Неестественные позы и выражения лица</li>
+                <li>Игнорирование указаний фотографа/режиссера</li>
+                <li>Отсутствие пунктуальности</li>
+                <li>Недостаток подготовки (не изучили информацию о проекте)</li>
+                <li>Переоценка своих возможностей или неуверенность в себе</li>
+                <li>Отсутствие базовых знаний о работе модели</li>
+              </ul>
             </div>
             
-            <div>
-                <div class="sidebar">
-                    <h3 class="sidebar-title">ПОЛЕЗНЫЕ НАВЫКИ ДЛЯ МОДЕЛЕЙ</h3>
-                    
-                    <div style="display: grid; gap: 15px;">
-                        <div>
-                            <p style="font-weight: bold;">Основы актерского мастерства</p>
-                            <p>Помогут передавать эмоции и вживаться в образ</p>
-                        </div>
-                        
-                        <div>
-                            <p style="font-weight: bold;">Умение двигаться перед камерой</p>
-                            <p>Плавные, естественные движения делают кадры более живыми</p>
-                        </div>
-                        
-                        <div>
-                            <p style="font-weight: bold;">Знание своих выигрышных ракурсов</p>
-                            <p>Понимание, как выгодно подать свою внешность</p>
-                        </div>
-                        
-                        <div>
-                            <p style="font-weight: bold;">Базовые навыки позирования</p>
-                            <p>Разнообразие поз для фото и видеосъемки</p>
-                        </div>
-                        
-                        <div>
-                            <p style="font-weight: bold;">Умение работать с мимикой</p>
-                            <p>Контроль над выражением лица для передачи разных эмоций</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="sidebar">
-                    <h3 class="sidebar-title">ПРАВИЛА ПРОФЕССИОНАЛЬНОГО ПОВЕДЕНИЯ</h3>
-                    
-                    <ul>
-                        <li>Уважайте время всей команды, приходите вовремя</li>
-                        <li>Поддерживайте позитивную атмосферу на площадке</li>
-                        <li>Не используйте телефон во время работы</li>
-                        <li>Берегите реквизит и костюмы</li>
-                        <li>Следуйте всем инструкциям режиссера и фотографа</li>
-                        <li>Не стесняйтесь задавать уточняющие вопросы</li>
-                        <li>Будьте готовы к длительным съемкам</li>
-                    </ul>
-                </div>
-                
-                <div class="sidebar">
-                    <h3 class="sidebar-title">ПОДГОТОВКА К СЪЁМКЕ</h3>
-                    
-                    <div>
-                        <p style="font-weight: bold;">За неделю до съёмки:</p>
-                        <ul>
-                            <li>Начните питаться правильно</li>
-                            <li>Пейте больше воды</li>
-                            <li>Сделайте увлажняющие маски для лица и волос</li>
-                        </ul>
-                    </div>
-                    <br>
-                    <div>
-                        <p style="font-weight: bold;">За день до съёмки:</p>
-                        <ul>
-                            <li>Исключите соленую и острую пищу</li>
-                            <li>Подготовьте одежду по рекомендациям организаторов</li>
-                            <li>Ложитесь спать пораньше</li>
-                        </ul>
-                    </div>
-                    <br>
-                    <div>
-                        <p style="font-weight: bold;">В день съёмки:</p>
-                        <ul>
-                            <li>Примите контрастный душ для тонуса</li>
-                            <li>Не наносите макияж, если это не оговорено отдельно</li>
-                            <li>Выходите из дома с запасом времени</li>
-                        </ul>
-                    </div>
-                    
-                    <hr style="margin: 20px 0;">
-                    
-                    <div style="text-align: center;">
-                        <p>
-                            Если у вас остались вопросы о подготовке к кастингу или съёмкам, вы всегда можете уточнить их у нас:
-                        </p>
-                        
-                        <p style="margin-top: 10px;">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: middle;">
-                                <path d="M22 2L11 13"></path>
-                                <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
-                            </svg>
-                            <a href="https://t.me/vocoders" target="_blank" rel="noopener noreferrer" style="font-weight: bold; text-decoration: underline;">t.me/vocoders</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <h3 class="newspaper-subtitle mt-4">ВО ВРЕМЯ СЪЁМОК</h3>
+            
+            <p class="mb-4">
+              <strong>1. Будьте готовы к повторениям.</strong> Иногда для получения идеального кадра требуется много дублей и повторений одних и тех же действий.
+            </p>
+            
+            <p class="mb-4">
+              <strong>2. Поддерживайте энергию.</strong> Съёмки могут быть длительными, поэтому важно сохранять энтузиазм и энергию на протяжении всего процесса.
+            </p>
+            
+            <p class="mb-4">
+              <strong>3. Будьте открыты для экспериментов.</strong> Не бойтесь пробовать разные образы и эмоции, даже если они кажутся вам необычными.
+            </p>
+            
+            <p class="mb-4">
+              <strong>4. Задавайте вопросы.</strong> Если вам что-то непонятно, лучше уточнить, чем делать по-своему и потом переснимать.
+            </p>
+          </article>
         </div>
-    </main>
-    
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div>
-                    <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 14px; color: #555;">© <script>document.write(new Date().getFullYear())</script> КАСТИНГИ СПБ</p>
-                    <p>Поиск моделей для творческих проектов в Санкт-Петербурге</p>
-                </div>
-                
-                <div class="contact-info">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M22 2L11 13"></path>
-                        <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
-                    </svg>
-                    <a href="https://t.me/vocoders" target="_blank" rel="noopener noreferrer">Telegram: t.me/vocoders</a>
-                </div>
+        
+        <div>
+          <div class="box mb-4">
+            <h3 class="newspaper-subtitle" style="border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 15px;">ПОЛЕЗНЫЕ НАВЫКИ ДЛЯ МОДЕЛЕЙ</h3>
+            
+            <div class="newspaper-text">
+              <div style="margin-bottom: 15px;">
+                <p class="font-bold">Основы актерского мастерства</p>
+                <p>Помогут передавать эмоции и вживаться в образ</p>
+              </div>
+              
+              <div style="margin-bottom: 15px;">
+                <p class="font-bold">Умение двигаться перед камерой</p>
+                <p>Плавные, естественные движения делают кадры более живыми</p>
+              </div>
+              
+              <div style="margin-bottom: 15px;">
+                <p class="font-bold">Знание своих выигрышных ракурсов</p>
+                <p>Понимание, как выгодно подать свою внешность</p>
+              </div>
+              
+              <div style="margin-bottom: 15px;">
+                <p class="font-bold">Базовые навыки позирования</p>
+                <p>Разнообразие поз для фото и видеосъемки</p>
+              </div>
+              
+              <div style="margin-bottom: 15px;">
+                <p class="font-bold">Умение работать с мимикой</p>
+                <p>Контроль над выражением лица для передачи разных эмоций</p>
+              </div>
             </div>
+          </div>
+          
+          <div class="box mb-4">
+            <h3 class="newspaper-subtitle" style="border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 15px;">ПРАВИЛА ПРОФЕССИОНАЛЬНОГО ПОВЕДЕНИЯ</h3>
+            
+            <ul class="feature-list newspaper-text">
+              <li>Уважайте время всей команды, приходите вовремя</li>
+              <li>Поддерживайте позитивную атмосферу на площадке</li>
+              <li>Не используйте телефон во время работы</li>
+              <li>Берегите реквизит и костюмы</li>
+              <li>Следуйте всем инструкциям режиссера и фотографа</li>
+              <li>Не стесняйтесь задавать уточняющие вопросы</li>
+              <li>Будьте готовы к длительным съемкам</li>
+            </ul>
+          </div>
+          
+          <div class="box">
+            <h3 class="newspaper-subtitle" style="border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 15px;">ПОДГОТОВКА К СЪЁМКЕ</h3>
+            
+            <div class="newspaper-text">
+              <div style="margin-bottom: 15px;">
+                <p class="font-bold">За неделю до съёмки:</p>
+                <ul class="feature-list" style="margin-top: 5px;">
+                  <li>Начните питаться правильно</li>
+                  <li>Пейте больше воды</li>
+                  <li>Сделайте увлажняющие маски для лица и волос</li>
+                </ul>
+              </div>
+              
+              <div style="margin-bottom: 15px;">
+                <p class="font-bold">За день до съёмки:</p>
+                <ul class="feature-list" style="margin-top: 5px;">
+                  <li>Исключите соленую и острую пищу</li>
+                  <li>Подготовьте одежду по рекомендациям организаторов</li>
+                  <li>Ложитесь спать пораньше</li>
+                </ul>
+              </div>
+              
+              <div style="margin-bottom: 15px;">
+                <p class="font-bold">В день съёмки:</p>
+                <ul class="feature-list" style="margin-top: 5px;">
+                  <li>Примите контрастный душ для тонуса</li>
+                  <li>Не наносите макияж, если это не оговорено отдельно</li>
+                  <li>Выходите из дома с запасом времени</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="separator"></div>
+            
+            <div class="text-center">
+              <p class="newspaper-text mb-4">
+                Если у вас остались вопросы о подготовке к кастингу или съёмкам, вы всегда можете уточнить их у нас:
+              </p>
+              
+              <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 10px;">
+                <svg class="icon icon-small" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+                <a 
+                  href="https://t.me/vocoders" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="newspaper-contact"
+                  style="text-decoration: underline;"
+                >
+                  t.me/vocoders
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="text-center">
+          <p class="newspaper-date" style="margin-bottom: 8px;">© <script>document.write(new Date().getFullYear())</script> КАСТИНГИ СПБ</p>
+          <p class="newspaper-text" style="margin-top: 8px;">Поиск моделей для творческих проектов в Санкт-Петербурге</p>
+        </div>
+        
+        <div class="contact-button newspaper-contact">
+          <svg class="icon icon-small" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+          <a href="https://t.me/vocoders" target="_blank" rel="noopener noreferrer">
+            Telegram: t.me/vocoders
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
